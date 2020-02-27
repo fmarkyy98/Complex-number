@@ -24,6 +24,7 @@ public:
 
 	ComplexNumber& operator + (ComplexNumber& c);
 	ComplexNumber& operator * (ComplexNumber& c);
+	ComplexNumber& operator = (ComplexNumber& c);
 
 	friend std::ostream& operator << (std::ostream& os, const ComplexNumber& c);
 };
