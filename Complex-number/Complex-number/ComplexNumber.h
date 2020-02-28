@@ -22,9 +22,9 @@ public:
 	ComplexNumber& add(ComplexNumber& c);
 	ComplexNumber& mul(ComplexNumber& c);
 
-	ComplexNumber& operator + (ComplexNumber& c);
-	ComplexNumber& operator * (ComplexNumber& c);
-	ComplexNumber& operator = (ComplexNumber& c);
+	ComplexNumber operator + (ComplexNumber& c);
+	ComplexNumber operator * (ComplexNumber& c);
+	//ComplexNumber& operator = (ComplexNumber& c);
 
 	friend std::ostream& operator << (std::ostream& os, const ComplexNumber& c);
 };

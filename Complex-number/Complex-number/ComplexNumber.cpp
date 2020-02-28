@@ -33,21 +33,21 @@ ComplexNumber& ComplexNumber::mul(ComplexNumber& c)
 	return result;
 }
 
-ComplexNumber& ComplexNumber::operator + (ComplexNumber& c)
+ComplexNumber ComplexNumber::operator + (ComplexNumber& c)
 {
 	ComplexNumber result(this->_real + c._real, this->_imag + c._imag);
 	return result;
 }
-ComplexNumber& ComplexNumber::operator * (ComplexNumber& c)
+ComplexNumber ComplexNumber::operator * (ComplexNumber& c)
 {
 	ComplexNumber result(this->_real * c._real - this->_imag * c._imag, this->_real * c._imag + this->_imag * c._real);
 	return result;
 }
-ComplexNumber& ComplexNumber::operator = (ComplexNumber& c)
-{
-	ComplexNumber result(c);
-	return result;
-}
+//ComplexNumber& ComplexNumber::operator = (ComplexNumber& c)
+//{
+//	ComplexNumber result(c);
+//	return result;
+//}
 
 std::ostream& operator << (std::ostream& os, const ComplexNumber& c)
 {
